@@ -49,10 +49,10 @@ def get_jwt_token_sync(region):
     global jwt_token
     # Only PK, IND and BD servers supported
     endpoints = {
-        "IND": "https://raihan-access-to-jwt.vercel.app/token?uid=4389369005&password=7295F1B779293810CF31DC09E126F1E955BB8DB96133E1475EFB830FEBF2B82C",
-        "BD": "https://raihan-access-to-jwt.vercel.app/token?uid=4363457346&password=SENKU_692491",
-        "PK": "https://raihan-access-to-jwt.vercel.app/token?uid=4363456802&password=SENKU_692458",
-        "default": "https://raihan-access-to-jwt.vercel.app/token?uid=4349251999&password=GARENA_KI_MKC_PZEEC_BY_SENKU_CODEX_4P5PL"
+        "IND": "http://jwt.thug4ff.com/token?uid=4389369005&password=7295F1B779293810CF31DC09E126F1E955BB8DB96133E1475EFB830FEBF2B82C",
+        "BD": "http://jwt.thug4ff.com/token?uid=4363457346&password=SENKU_692491",
+        "PK": "http://jwt.thug4ff.com/token?uid=4363456802&password=SENKU_692458",
+        "default": "http://jwt.thug4ff.com/token?uid=4349251999&password=GARENA_KI_MKC_PZEEC_BY_SENKU_CODEX_4P5PL"
     }
     
     # If region not in supported list, use IND as default
