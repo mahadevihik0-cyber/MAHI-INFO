@@ -133,7 +133,7 @@ def apis(idd, region):
         'Authorization': f'Bearer {token}',
         'X-Unity-Version': '2018.4.11f1',
         'X-GA': 'v1 1',
-        'ReleaseVersion': 'OB51',
+        'ReleaseVersion': 'OB52',
         'Content-Type': 'application/x-www-form-urlencoded',
     }
     
@@ -185,7 +185,7 @@ def get_player_info():
         message = AccountPersonalShowInfo()
         message.ParseFromString(bytes.fromhex(api_response))
         result = MessageToDict(message)
-        result['Owners'] = ['SENKU CODEX']
+        result['Owners'] = ['MAHI']
         result['Supported_Regions'] = ['IND', 'BD', 'PK']
         return jsonify(result)
     
